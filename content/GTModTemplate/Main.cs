@@ -11,6 +11,7 @@
 using GTModTemplate.Patches;
 using GTModTemplate.Utilities;
 using BepInEx;
+using UnityEngine;
 
 namespace GTModTemplate;
 

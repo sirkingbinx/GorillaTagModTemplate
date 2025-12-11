@@ -18,7 +18,7 @@ public static class AssetBundleUtilities
     /// </summary>
     public static bool LoadToCache(string path, out AssetBundle? bundle)
     {
-        bundleCache.TryGetValue(path, out _bundle);
+        bundleCache.TryGetValue(path, out var _bundle);
         _bundle ??= AssetBundle.LoadFromStream(Assembly.GetExecutingAssembly().GetManifestResourceStream(path));
         
         if (_bundle == null) {
@@ -27,8 +27,7 @@ public static class AssetBundleUtilities
             return false;
         }
 
-        if (!bundleCache.ContainsKey(path))
-            bundleCache.Add(path, _bundle);
+        bundleCache.TryAdd(path, _bundle);
 
 		bundle = _bundle;
         return true;

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GTModTemplate.Utilities;
@@ -24,27 +25,4 @@ public static class MethodUtilities
 
         return true;
     }
-
-    /// <summary>
-    /// Returns true if the provided Func caused no errors in execution, and get it's arguments.
-    /// </summary>
-    public static bool Attempt(Func method, out object[] args)
-    {
-        try
-        {
-            args = new object[] { method() };
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError(ex);
-            return false;
-        }
-
-        return true;
-    }
-
-    /// <summary>
-    /// Returns true if the provided Func caused no errors in execution.
-    /// </summary>
-    public static bool Attempt(Func method) => Attempt(method, out var _);
 }
