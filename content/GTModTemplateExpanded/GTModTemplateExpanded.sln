@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTModTemplate", "GTModTemplate.csproj", "{00C4AF64-9837-47C3-841E-D0D1167430FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTModTemplateExpanded", "GTModTemplateExpanded.csproj", "{00C4AF64-9837-47C3-841E-D0D1167430FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

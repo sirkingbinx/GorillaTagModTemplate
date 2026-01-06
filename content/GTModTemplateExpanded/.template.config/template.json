@@ -5,7 +5,7 @@
     "identity": "bingus.modtemplate",
     "name": "Gorilla Tag Mod Template [Expanded]",
     "shortName": "gtmod-expanded",
-    "sourceName": "GTModTemplate",
+    "sourceName": "GTModTemplateExpanded",
     "tags": {
         "type": "project",
         "platform": "Windows",

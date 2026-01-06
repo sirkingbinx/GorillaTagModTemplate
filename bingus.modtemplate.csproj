@@ -1,24 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- The package metadata. Fill in the properties marked as TODO below -->
-    <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>bingus.gorillatagmodtemplate</PackageId>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageVersion>1.0.5</PackageVersion>
     <Title>Gorilla Tag Mod Template</Title>
     <Authors>SirKingBinx</Authors>
-    <Description>Create Gorilla Tag mods</Description>
-    <PackageTags>classlib;windows</PackageTags>
+    <Description>Mod template for Gorilla Tag</Description>
+    <PackageTags>library,windows,c#</PackageTags>
     <PackageProjectUrl>https://github.com/sirkingbinx/GorillaTagModTemplate</PackageProjectUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
     <PackageType>Template</PackageType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup>
