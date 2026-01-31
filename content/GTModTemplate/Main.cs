@@ -2,7 +2,7 @@ using System;
 using BepInEx;
 using CosmeticNames.Patches;
 
-namespace CosmeticNames;
+namespace GTModTemplate;
 //Example dependency - can also include version numbers
 //[BepInDependency("example.mod.guid")]
 
