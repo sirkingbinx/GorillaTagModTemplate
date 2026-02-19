@@ -1,9 +1,9 @@
-using GTModTemplate.Patches;
-using GTModTemplate.Utilities;
+using GTModTemplateExpanded.Patches;
+using GTModTemplateExpanded.Utilities;
 using BepInEx;
 using UnityEngine;
 
-namespace GTModTemplate;
+namespace GTModTemplateExpanded;
 
 // See Constants.cs to edit these arguments
 [BepInPlugin(Constants.Guid, Constants.Name, Constants.Version)]

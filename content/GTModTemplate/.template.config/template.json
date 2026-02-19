@@ -3,6 +3,7 @@
     "author": "SirKingBinx",
     "classifications": [ "Library" ],
     "identity": "bingus.modtemplate",
+    "groupIdentity": "bingus.modtemplate",
     "name": "Gorilla Tag Mod Template",
     "shortName": "gtmod",
     "sourceName": "GTModTemplate",
