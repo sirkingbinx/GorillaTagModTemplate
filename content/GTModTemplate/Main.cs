@@ -1,6 +1,6 @@
 using System;
 using BepInEx;
-using  GTModTemplate.Patches;
+using GTModTemplate.Patches;
 
 namespace GTModTemplate;
 //Example dependency - can also include version numbers
