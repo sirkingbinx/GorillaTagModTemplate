@@ -1,4 +1,4 @@
-namespace GTModTemplate;
+namespace GTModTemplateExpanded;
 
 public static class Constants
 {

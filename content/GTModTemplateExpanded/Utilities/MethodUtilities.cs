@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace GTModTemplate.Utilities;
+namespace GTModTemplateExpanded.Utilities;
 
 /// <summary>
 /// Utilities for working with methods

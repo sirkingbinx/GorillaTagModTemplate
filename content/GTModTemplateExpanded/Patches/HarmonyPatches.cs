@@ -1,6 +1,6 @@
 using HarmonyLib;
 
-namespace GTModTemplate.Patches;
+namespace GTModTemplateExpanded.Patches;
 
 public static class HarmonyPatches
 {
