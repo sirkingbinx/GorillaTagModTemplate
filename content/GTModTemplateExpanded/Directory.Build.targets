@@ -5,7 +5,7 @@
         <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(PluginsPath)\$(MSBuildProjectName)\$(MSBuildProjectName).dll"/>
         <Message Text="$(MSBuildProjectName).dll -> $(MSBuildProjectName)\$(MSBuildProjectName).dll" Importance="high"/>
         <!-- Project PDB (program database), useful for debugging -->
-        <Copy SourceFiles="bin\debug\$(TargetFramework)\$(MSBuildProjectName).pdb" DestinationFiles="$(PluginsPath)\$(MSBuildProjectName)\$(MSBuildProjectName).pdb" />
-		<Message Text="$(MSBuildProjectName).pdb -> $(MSBuildProjectName)\$(MSBuildProjectName).pdb (pdb = Program Database, it is useful for debugging your apps)" Importance="high"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFiles="$(PluginsPath)\$(MSBuildProjectName)\$(MSBuildProjectName).pdb" />
+        <Message Text="$(MSBuildProjectName).pdb -> $(MSBuildProjectName)\$(MSBuildProjectName).pdb (pdb = Program Database, it is useful for debugging your apps)" Importance="high"/>
     </Target>
 </Project>
