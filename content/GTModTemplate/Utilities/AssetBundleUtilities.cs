@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GTModTemplateExpanded.Utilities;
+namespace GTModTemplate.Utilities;
 
 /// <summary>
 /// Utilities for managing and loading objects from Asset Bundles.

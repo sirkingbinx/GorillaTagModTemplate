@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
 
-namespace GTModTemplateExpanded.Utilities;
+namespace GTModTemplate.Utilities;
 
 /// <summary>
-/// Utilities for working with methods
+/// Utilities for working with methods.
 /// </summary>
 public static class MethodUtilities
 {
