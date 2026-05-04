@@ -1,9 +1,9 @@
 # GorillaTagModTemplate [![Version](https://img.shields.io/nuget/v/bingus.gorillatagmodtemplate) ![Downloads](https://img.shields.io/nuget/dt/bingus.gorillatagmodtemplate)](https://www.nuget.org/packages/bingus.gorillatagmodtemplate)
 
-This is a feature-packed mod template for Gorilla Tag with pre-built tools.
-- Asset bundle management
-- Method safety (a wrapper for the `try` block)
-- Harmony Patch manager
+This is a feature-packed mod template for Gorilla Tag with pre-built utilities and tools for newer mod developers to use.
+
+- Utils for overriding game methods with Harmony / loading Asset Bundles
+- BepInEx / MelonLoader support baked in
 
 It is loosely inspired by Graic's mod template.
 

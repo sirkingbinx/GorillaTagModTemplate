@@ -29,6 +29,14 @@
             "description": "GUID (Global Unique Identifier) of the mod. No spaces!",
             "isRequired": true
         },
+        "Author": {
+            "type": "parameter",
+            "defaultValue": "myname",
+            "replaces": "**AUTHOR**",
+            "datatype": "text",
+            "description": "Your name.",
+            "isRequired": true
+        },
         "GorillaTagLocation": {
             "type": "parameter",
             "defaultValue": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Gorilla Tag",

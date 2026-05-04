@@ -7,7 +7,7 @@ namespace GTModTemplate.Classes;
 /// <summary>
 /// Class for writing to logs.
 /// </summary>
-public class LogFile
+public class GorillaLog
 {
     private readonly StreamWriter _currentWriter;
 
@@ -72,10 +72,10 @@ public class LogFile
     /// </summary>
     public LogFile()
     {
-        var logsPath = Path.Combine(Application.persistentDataPath, "logs");
-        Directory.CreateDirectory(logsPath); // create log dir incase it doesn't exist
+        var dataPath = Path.Combine(Application.persistentDataPath, Constants.Name);
+        Directory.CreateDirectory(dataPath);
 
-        _currentWriter = new StreamWriter(Path.Combine(logsPath, $"{Constants.Name}.log"));
+        _currentWriter = new StreamWriter(Path.Combine(dataPath, "Latest.log"));
         _currentWriter.AutoFlush = true;
     }
 }

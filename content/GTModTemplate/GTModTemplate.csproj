@@ -23,6 +23,11 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+
+        <!-- Allows us to create config files for users. This is a JSON package -->
+        <ItemGroup>
+            <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+        </ItemGroup>
     </ItemGroup>
 
     <ItemGroup>
