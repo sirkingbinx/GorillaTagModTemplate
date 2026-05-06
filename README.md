@@ -21,7 +21,8 @@ dotnet new install bingus.gorillatagmodtemplate
 You can use your code editor's GUI to create the project, or use the shorthand name of the template when creating via the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new):
 ```ps1
 # Make sure you have the template installed or this will error
-dotnet new gtmod -n MyModName
+mkdir MyModName
+dotnet new gtmod --Name MyModName --Author MyName --GUID MyName.MyModName
 ```
 
 
