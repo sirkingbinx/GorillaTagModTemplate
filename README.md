@@ -2,8 +2,9 @@
 
 This is a feature-packed mod template for Gorilla Tag with pre-built utilities and tools for newer mod developers to use.
 
-- Utils for overriding game methods with Harmony / loading Asset Bundles
-- BepInEx / MelonLoader support baked in
+- Single-assembly BepInEx / MelonLoader support
+- Custom config file support
+- Log file management
 
 It is loosely inspired by Graic's mod template.
 
