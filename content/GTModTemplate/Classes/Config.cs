@@ -1,6 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.IO;
+using Newtonsoft.Json;
+using UnityEngine;
 
 namespace GTModTemplate.Classes;
 
@@ -44,8 +44,10 @@ public class Config
 
         var json = File.ReadAllText(fileName);
 
+#pragma warning disable CS8601
         try {
-            Current = JsonConvert.SerializeObject<Config>(json);
+            Current = JsonConvert.DeserializeObject<Config>(json);
         } catch { } // skip any errors we get
+#pragma warning restore CS8601
     }
 }

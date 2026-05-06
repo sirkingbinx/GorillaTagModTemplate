@@ -14,7 +14,7 @@
 
         <!-- Include information about what functions are called to make debugging easier. -->
         <!-- Build the mod in "Release" configuration to disable this (recommended).-->
-		  <DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
+	<DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,10 +25,20 @@
         </PackageReference>
 
         <!-- Allows us to create config files for users. This is a JSON package -->
-        <ItemGroup>
-            <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-        </ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="HarmonyLib" >
+		  <HintPath>$(DependenciesPath)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx" >
+		  <HintPath>$(DependenciesPath)\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader" >
+			<HintPath>$(DependenciesPath)\MelonLoader.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 
     <ItemGroup>
         <!-- These are references to game code so you can use everything -->
@@ -42,7 +52,7 @@
           <HintPath>$(GameAssemblyPath)\andywiecko.BurstTriangulator.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp" Publicize="true">
-            <HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
+          <HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="Assembly-CSharp-firstpass" >
           <HintPath>$(GameAssemblyPath)\Assembly-CSharp-firstpass.dll</HintPath>
@@ -97,12 +107,6 @@
         </Reference>
         <Reference Include="GT_CustomMapSupportRuntime" >
           <HintPath>$(GameAssemblyPath)\GT_CustomMapSupportRuntime.dll</HintPath>
-        </Reference>
-        <Reference Include="HarmonyLib" >
-            <HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
-        </Reference>
-        <Reference Include="BepInEx" >
-            <HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
         </Reference>
         <Reference Include="Fusion.Runtime" >
             <HintPath>$(GameAssemblyPath)\Fusion.Runtime.dll</HintPath>

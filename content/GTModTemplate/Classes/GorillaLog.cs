@@ -30,34 +30,24 @@ public class GorillaLog
     /// <summary>
     /// Log the line into the log with the logLevel string.
     /// </summary>
-    public void WriteLine(string text, LogLevel logLevel = LogLevel.Info) => Log($"[{logLevel} @ {Time.deltaTime}]: {text}", "\n");
+    public void WriteLine(string text) => Write($"[{Time.deltaTime}]: {text}", "\n");
 
     /// <summary>
     /// Log an exception to the file. This logs the message, source, and stack trace of the exception.
     /// </summary>
     public void WriteException(Exception ex)
     {
-        Log($"{Divider}\nAn exception occured!", "\n");
-        Log($"  Message:   {ex.Message}", "\n");
-        Log($"  Source:    {ex.Source}", "\n");
-        Log( "  Stack:", "\n");
-        Log(ex.StackTrace.Replace("\n", "\n\t").Trim().RemoveEnd("\n"), "\n");
-        Log(Divider, "\n");
+        WriteLine($"{Divider}\nAn exception occured!");
+        WriteLine($"  Message:   {ex.Message}");
+        WriteLine($"  Source:    {ex.Source}");
+        WriteLine( "  Stack:");
+        WriteLine(ex.StackTrace.Replace("\n", "\n\t").Trim().RemoveEnd("\n"));
+        WriteLine(Divider);
     }
 
     // Shortcuts
     public void Write(Exception ex) => WriteException(ex);
     public void WriteLine(Exception ex) => WriteException(ex);
-
-    /// <summary>
-    /// Log an error into the log.
-    /// </summary>
-    public void LogError(string text) => Log($"{text}", LogLevel.Error);
-
-    /// <summary>
-    /// Log a warning into the log.
-    /// </summary>
-    public void LogWarning(string text) => Log($"{text}", LogLevel.Warning);
 
     /// <summary>
     /// Close the log and disable writing.
@@ -68,9 +58,9 @@ public class GorillaLog
     }
 
     /// <summary>
-    /// Create a new LogFile.
+    /// Create a new GorillaLog.
     /// </summary>
-    public LogFile()
+    public GorillaLog()
     {
         var dataPath = Path.Combine(Application.persistentDataPath, Constants.Name);
         Directory.CreateDirectory(dataPath);

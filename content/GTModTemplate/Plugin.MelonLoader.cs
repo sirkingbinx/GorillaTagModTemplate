@@ -1,6 +1,6 @@
-using BepInEx;
 using MelonLoader;
 using GTModTemplate;
+using UnityEngine;
 
 // This is used by MelonLoader to initialize your mod. Please put all of your mod code in Main.cs.
 
@@ -14,7 +14,7 @@ public class PluginMelonLoader : MelonMod
 {
     public override void OnLateInitializeMelon()
     {
-        GameObject obj = new GameObject(Constants.Guid)
+        GameObject obj = new GameObject(Constants.Guid);
         obj.AddComponent<Main>();
         Object.DontDestroyOnLoad(obj);
     }

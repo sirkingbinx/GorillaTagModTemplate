@@ -22,18 +22,18 @@ public static class HarmonyPatches
 
     /// Here is where the actual patching starts! You don't need to mess with any of this.
 
-    private static Harmony? _harmonyInstance;
+    private static HarmonyLib.Harmony? _harmonyInstance;
 
     /// <summary>
     ///     The current instance of Harmony that is patching the assembly.
     ///     If there is no Harmony instance, it will create one and return it.
     ///     You do not need to touch this section
     /// </summary>
-    private static Harmony HarmonyInstance
+    private static HarmonyLib.Harmony HarmonyInstance
     {
         get
         {
-            _harmonyInstance ??= new Harmony(Constants.Guid);
+            _harmonyInstance ??= new HarmonyLib.Harmony(Constants.Guid);
             return _harmonyInstance;
         }
     }

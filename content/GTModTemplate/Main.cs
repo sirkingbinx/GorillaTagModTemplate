@@ -1,13 +1,13 @@
 using GTModTemplate.Classes;
 using GTModTemplate.Patches;
 using GTModTemplate.Utilities;
-using System;
+using UnityEngine;
 
 namespace GTModTemplate;
 
 public class Main : MonoBehaviour
 {
-    public static Main Instance;
+    public static Main? Instance;
 
     // This is a log, used for writing information for debug purposes
     public GorillaLog Log = new();
@@ -16,6 +16,7 @@ public class Main : MonoBehaviour
     private void Start()
     {
         Instance = this;
+
         HarmonyPatches.Patch(); // Patch the game
         Config.Load(); // Load configuration data
         Application.quitting += Config.Save; // Save configuration on exit

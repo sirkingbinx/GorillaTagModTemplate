@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project>
     <!-- Copy the finished mod to your build folder -->
-    <Target Name="CopyToBuild" AfterTargets="Build">
+        <Target Name="CopyToBuild" AfterTargets="Build">
 		<Copy SourceFiles="$(TargetPath)" DestinationFiles="Build\$(MSBuildProjectName).dll"/>
 		<Message Text="$(MSBuildProjectName).dll -> Build\$(MSBuildProjectName).dll" Importance="high"/>
 	</Target>
