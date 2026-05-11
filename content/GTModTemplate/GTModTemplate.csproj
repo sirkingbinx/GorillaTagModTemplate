@@ -14,7 +14,7 @@
 
         <!-- Include information about what functions are called to make debugging easier. -->
         <!-- Build the mod in "Release" configuration to disable this (recommended).-->
-	<DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
+	      <DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -28,17 +28,17 @@
         <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     </ItemGroup>
 
-	<ItemGroup>
-		<Reference Include="HarmonyLib" >
-		  <HintPath>$(DependenciesPath)\0Harmony.dll</HintPath>
-		</Reference>
-		<Reference Include="BepInEx" >
-		  <HintPath>$(DependenciesPath)\BepInEx.dll</HintPath>
-		</Reference>
-		<Reference Include="MelonLoader" >
-			<HintPath>$(DependenciesPath)\MelonLoader.dll</HintPath>
-		</Reference>
-	</ItemGroup>
+    <ItemGroup>
+      <Reference Include="HarmonyLib" >
+        <HintPath>$(DependenciesPath)\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx" >
+        <HintPath>$(DependenciesPath)\BepInEx.dll</HintPath>
+      </Reference>
+      <Reference Include="MelonLoader" >
+        <HintPath>$(DependenciesPath)\MelonLoader.dll</HintPath>
+      </Reference>
+    </ItemGroup>
 
     <ItemGroup>
         <!-- These are references to game code so you can use everything -->
@@ -221,9 +221,6 @@
         </Reference>
         <Reference Include="NavMeshComponents" >
           <HintPath>$(GameAssemblyPath)\NavMeshComponents.dll</HintPath>
-        </Reference>
-        <Reference Include="Newtonsoft.Json" >
-          <HintPath>$(GameAssemblyPath)\Newtonsoft.Json.dll</HintPath>
         </Reference>
         <Reference Include="nexus.nexussdk.Runtime" >
           <HintPath>$(GameAssemblyPath)\nexus.nexussdk.Runtime.dll</HintPath>
