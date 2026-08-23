@@ -2,10 +2,6 @@
 
 This is a feature-packed mod template for Gorilla Tag with pre-built utilities and tools for newer mod developers to use.
 
-- Single-assembly BepInEx / MelonLoader support
-- Custom config file support
-- Log file management
-
 It is loosely inspired by Graic's mod template.
 
 ## Install
