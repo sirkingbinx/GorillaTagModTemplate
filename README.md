@@ -1,4 +1,4 @@
-# GorillaTagModTemplate [![Version](https://img.shields.io/nuget/v/bingus.gorillatagmodtemplate) ![Downloads](https://img.shields.io/nuget/dt/bingus.gorillatagmodtemplate)](https://www.nuget.org/packages/bingus.gorillatagmodtemplate)
+# GorillaTagModTemplate [![Version](https://img.shields.io/nuget/v/bingus.gtmodtemplate) ![Downloads](https://img.shields.io/nuget/dt/bingus.gtmodtemplate)](https://www.nuget.org/packages/bingus.gtmodtemplate)
 
 This is a feature-packed mod template for Gorilla Tag with pre-built utilities and tools for newer mod developers to use.
 

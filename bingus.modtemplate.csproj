@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>bingus.gorillatagmodtemplate</PackageId>
+    <PackageId>bingus.gtmodtemplate</PackageId>
     <PackageVersion>1.1.0</PackageVersion>
     <Title>Gorilla Tag Mod Template</Title>
     <Authors>SirKingBinx</Authors>
