@@ -13,7 +13,7 @@ It is loosely inspired by Graic's mod template.
 
 To install, run this command from the Terminal:
 ```bat
-dotnet new install bingus.gorillatagmodtemplate
+dotnet new install bingus.gtmodtemplate
 ```
 You can use your code editor's GUI to create the project, or use the shorthand name of the template when creating via the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new):
 ```ps1
