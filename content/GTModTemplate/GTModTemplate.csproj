@@ -1,16 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<!-- .NET 4.7.2 is used with mono -->
 		<TargetFramework>net472</TargetFramework>
-
-		<!-- Use the latest C# version to get the newest features -->
 		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable> 
 
-		<!-- Allow variables to be null, which may help you write better code -->
-		<Nullable>enable</Nullable>
-
-		<!-- Include information about what functions are called to make debugging easier. -->
-		<!-- Build the mod in "Release" configuration to disable this (recommended).-->
+		<!-- Add debug symbols which are useful for debugging later. This points out line numbers of
+		errors to you inside of your log file. -->
 		<DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
 	</PropertyGroup>
 
@@ -24,18 +19,20 @@
 
 	<ItemGroup>
 		<Reference Include="HarmonyLib">
-			<HintPath>$(DependenciesPath)\0Harmony.dll</HintPath>
+			<HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
 		</Reference>
 		<Reference Include="BepInEx">
-			<HintPath>$(DependenciesPath)\BepInEx.dll</HintPath>
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Assembly_CSharp" Publicize="true">
+			<HintPath>$(GameAssemblyPath)\Assembly_CSharp.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 
-	<!-- This item group automatically imports all game assemblies except for problematic ones-->
 	<ItemGroup>
-		<_GameDlls Include="$(GameAssemblyPath)\*.dll" Exclude="$(GameAssemblyPath)\mscorlib.dll;$(GameAssemblyPath)\System*.dll" />
-
-		<Reference Include="@(_GameDlls)">
+		<Reference Include="$(GameAssemblyPath)\*.dll"
+             Exclude="$(GameAssemblyPath)\mscorlib.dll;$(GameAssemblyPath)\System*.dll;$(GameAssemblyPath)\netstandard.dll;$(GameAssemblyPath)\Assembly_CSharp.dll">
 			<HintPath>%(Identity)</HintPath>
 		</Reference>
 	</ItemGroup>

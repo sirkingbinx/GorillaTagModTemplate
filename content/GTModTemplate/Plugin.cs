@@ -8,8 +8,6 @@ namespace GTModTemplate;
 [BepInPlugin(Constants.Name, Constants.Guid, Constants.Version)]
 public class Plugin : BaseUnityPlugin
 {
-    public GorillaLog Log = new();
-
     private void Start()
     {
         HarmonyPatches.Patch();
@@ -18,6 +16,6 @@ public class Plugin : BaseUnityPlugin
 
     private void OnPlayerSpawned()
     {
-        Log.WriteLine("Hello world!");
+        Logger.WriteLine("Hello world!");
     }
 }

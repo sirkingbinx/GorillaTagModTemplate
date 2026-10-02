@@ -13,36 +13,12 @@
         "language": "C#"
     },
     "symbols": {
-        "Name": {
+        "AuthorName": {
             "type": "parameter",
-            "defaultValue": "MyMod",
-            "replaces": "**MODNAME**",
-            "datatype": "text",
-            "description": "Name of the mod",
-            "isRequired": true
-        },
-        "GUID": {
-            "type": "parameter",
-            "defaultValue": "myname.mymod",
-            "replaces": "**GUID**",
-            "datatype": "text",
-            "description": "GUID (Global Unique Identifier) of the mod. No spaces!",
-            "isRequired": true
-        },
-        "Author": {
-            "type": "parameter",
-            "defaultValue": "myname",
-            "replaces": "**AUTHOR**",
             "datatype": "text",
             "description": "Your name.",
-            "isRequired": true
-        },
-        "GorillaTagLocation": {
-            "type": "parameter",
-            "defaultValue": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Gorilla Tag",
-            "replaces": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Gorilla Tag",
-            "datatype": "text",
-            "description": "Where your Gorilla Tag install is located"
+            "replaces": "MyName",
+            "defaultValue": "Gorilla"
         }
     }
 }

@@ -1,4 +1,4 @@
-# GorillaTagModTemplate [![Version](https://img.shields.io/nuget/v/bingus.gtmodtemplate) ![Downloads](https://img.shields.io/nuget/dt/bingus.gtmodtemplate)](https://www.nuget.org/packages/bingus.gtmodtemplate)
+# GorillaTagModTemplate [![Version](https://img.shields.io/nuget/v/bingus.gorillatagmodtemplate) ![Downloads](https://img.shields.io/nuget/dt/bingus.gtmodtemplate)](https://www.nuget.org/packages/bingus.gorillatagmodtemplate)
 
 This is a feature-packed mod template for Gorilla Tag with pre-built utilities and tools for newer mod developers to use.
 
@@ -13,7 +13,7 @@ It is loosely inspired by Graic's mod template.
 
 To install, run this command from the Terminal:
 ```bat
-dotnet new install bingus.gtmodtemplate
+dotnet new install bingus.gorillatagmodtemplate
 ```
 You can use your code editor's GUI to create the project, or use the shorthand name of the template when creating via the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new):
 ```ps1

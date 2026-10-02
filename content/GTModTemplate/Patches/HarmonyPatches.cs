@@ -15,7 +15,7 @@ public static class HarmonyPatches
         [HarmonyPostfix]
         private static void AwakePatch(GTPlayer __instance)
         {
-            Main.Instance.Log($"[{Constants.Name}]: hello world!");
+            Main.Instance.Log($"[{PluginInfo.Name}]: hello world!");
         }
     }
 
