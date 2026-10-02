@@ -1,5 +1,4 @@
 using BepInEx;
-using GTModTemplate.Classes;
 using GTModTemplate.Patches;
 using GTModTemplate.Utilities;
 
@@ -16,6 +15,6 @@ public class Plugin : BaseUnityPlugin
 
     private void OnPlayerSpawned()
     {
-        Logger.WriteLine("Hello world!");
+        Logger.WriteInfo("Hello world!");
     }
 }

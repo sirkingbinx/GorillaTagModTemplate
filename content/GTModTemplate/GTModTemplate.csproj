@@ -7,13 +7,15 @@
 		<!-- Add debug symbols which are useful for debugging later. This points out line numbers of
 		errors to you inside of your log file. -->
 		<DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
+		
+		<!-- Allow usage of assembly publicizers-->
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!-- Allows us to use all of the functions Gorilla Tag offers. -->
 		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3">
-			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 	</ItemGroup>
 
@@ -32,7 +34,7 @@
 
 	<ItemGroup>
 		<Reference Include="$(GameAssemblyPath)\*.dll"
-             Exclude="$(GameAssemblyPath)\mscorlib.dll;$(GameAssemblyPath)\System*.dll;$(GameAssemblyPath)\netstandard.dll;$(GameAssemblyPath)\Assembly_CSharp.dll">
+             Exclude="$(GameAssemblyPath)\Assembly_CSharp.dll;$(GameAssemblyPath)\mscorlib.dll;$(GameAssemblyPath)\System*.dll;$(GameAssemblyPath)\netstandard.dll">
 			<HintPath>%(Identity)</HintPath>
 		</Reference>
 	</ItemGroup>
