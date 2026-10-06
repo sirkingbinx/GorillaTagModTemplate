@@ -4,7 +4,7 @@ using GTModTemplate.Utilities;
 
 namespace GTModTemplate;
 
-[BepInPlugin(Constants.Name, Constants.Guid, Constants.Version)]
+[BepInPlugin(Constants.Guid, Constants.Name, Constants.Version)]
 public class Plugin : BaseUnityPlugin
 {
     private void Start()
